@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    transition: 0.2s;
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.dark{
+    background-color: rgb(17, 17, 17);
+    color: white;
+}
+
+.dark-link{
+    color: red;
+    border-bottom: 1px solid red;
+}
+   
+.dark-link:hover,
+.dark-link:focus{
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+header{
+    padding: 8px 24px;
+    
+}
+
+header .container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+header img{
+    width: 280px;
+}
+
+
+header nav ul{
+    list-style: none;
+    display: flex;
+}
+
+header ul li + li{
+    margin-left: 24px;
+}
+
+header a{
+    color: white;
+    font-size: large;
+    border-bottom: 1px solid white;
+}
+
+header a:hover, 
+header a:focus{
+    color: red;
+    border-bottom: 1px solid red;
+}
+
+.hero{
+    height: 400px;
+    padding: 24px;
+
+    background-image: url(image/liga-da-justica.jpeg);
+    background-size: cover;
+    background-position: center top;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.galeria{
+    padding: 64px 24px 96px;
+}
+
+.galeria h2{
+    color: black;
+    margin-bottom: 32px;
+    border-left: 4px solid red;
+    padding-left: 8px;
+}
+
+.gallery-row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.gallery-row div{
+    flex: 1 1 250px;
+}
+
+.gallery-row img{
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.galeria p{
+    font-weight: bold;
+}
+
+.historia {
+    padding: 92px 24px 0;
+    border-top: 4px solid red;
+}
+
+
+.historia .container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    border-bottom: 2px solid red;
+}
+
+
+
+.historia .container .league{
+    flex: 1 1 350px;
+}
+
+.historia img{
+    width: 100%;
+    display: block;
+}
+
+.historia h2{
+    margin-bottom: 32px;
+    border-left: 4px solid red;
+    padding-left: 8px;
+}
+
+.historia p{
+    line-height: 1.5;
+}
+
+.historia p + p{
+    margin-top: 24px;
+}
+
+footer{
+    padding: 64px 24px;
+    text-align: center;
+}
+
